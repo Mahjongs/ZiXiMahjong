@@ -1,0 +1,11 @@
+UDP	短链接 
+
+TCP	长链接
+
+服务端 ：需要绑定IP和端口号，Bind
+	 开启监听Listen（）0就是不限制连接数
+	 开始接收客户端请求链接.Accept(),异步BeginAccept(),得到与客户端通信的Socket对象Client
+	 Client.Receive(),Client.Send()
+
+客户端 ：Connect(）连接服务器，BeginConnec（）得到与服务器通信的Socket对象Server
+	 发消息 Server.Send Server.Receive()
